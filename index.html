@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: "bmhannapro";
+            src: url(bmhannapro.ttf);
+                format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body{
+            font-family: "bmhannapro";
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+            background-image: url("./background.png");
+        }
+        .container {
+            width: 390px;
+            background-color: #ff9d73;
+            height: 100%;
+        }
+        .photos {
+            margin-top: 30px;
+        }
+        .photo-frame {
+            background-color: white;
+            margin: 15px 20px;
+            height: 200px;
+
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .photo-description {
+            color: white;
+            background-color: black;
+
+            width: fit-content;
+            padding: 0 20px;
+            margin-bottom: 10px;
+
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+
+            transform: translate(-50%);
+            left: 50%;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .f-title {
+            color: white;
+            font-size: 25px;
+            font-weight: 900;
+        }
+        .f-date {
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        #image1 {
+            background-image: url('./img1135.png');
+        }
+        #image2 {
+            background-image: url('./img1136.png');
+        }
+        #image3 {
+            background-image: url('./img1135.png');
+        }
+        #image4 {
+            background-image: url('./img1136.png');
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo-description">
+                    세영이는
+                </span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desc2" class="photo-description">
+                    호림이와
+                </span>
+            </div>
+            <div id="image3" class="photo-frame">
+                <span id="desc3" class="photo-description">
+                    행복한 생일을
+                </span>
+            </div>
+            <div id="image4" class="photo-frame">
+                <span id="desc4" class="photo-description">
+                    보냈어요
+                </span>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="f-title">🎉Happy Birthday🎉</p>
+            <p class="f-date">2023.04.02</p>
+        </div>
+    </div>
+</body>
+</html>
